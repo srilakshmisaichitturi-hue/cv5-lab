@@ -29,7 +29,7 @@ def show_comparison(original, sobel, prewitt, canny):
   plt.show()
 
 # Read an image
-image = cv2.imread('image.JPG', 0) # Read in grayscale
+image = cv2.imread('nature.JPG', 0) # Read in grayscale
 #/content/image.jpg
 if image is None:
   print('Error: image not found')
@@ -56,4 +56,3 @@ else:
 
   # Display images
   show_comparison(image, np.uint8(np.absolute(sobel_combined)), prewitt_combined, canny)
-5
